@@ -13131,11 +13131,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\alejandro.jimenez\\Documents\\DEV-Alejandro\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\alejandro.jimenez\\Documents\\DEV-Alejandro\\asp-net-core-ejemplo\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\alejandro.jimenez\\Documents\\DEV-Alejandro\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "C:\\Users\\alejandro.jimenez\\Documents\\DEV-Alejandro\\asp-net-core-ejemplo\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\alejandro.jimenez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alejandro.jimenez\\Documents\\DEV-Alejandro\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\alejandro.jimenez\\Documents\\DEV-Alejandro\\asp-net-core-ejemplo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
