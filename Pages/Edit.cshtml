@@ -1,0 +1,38 @@
+﻿@page 
+@model WebApplication1.Pages.EditModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Editar Cliente - @Model.customer.Id</h2>
+
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    @*los campos de id y ciudad no son necesarios de editar (hidden)*@
+    <input asp-for="customer.Id" type="hidden" />
+    @*<input asp-for="customer.Ciudad" type="hidden">*@
+    <div>
+        <div>
+            <label asp-for="customer.Name">Nombre</label>
+            <div>
+                @*div es para dividir secciones de codigo*@
+                @*el Input es para darle diseño a la pagina , como un cuadro de texto*@
+                <input asp-for="customer.Name" />
+                <span asp-validation-for="customer.Name"></span>
+            </div>
+       </div>
+       <div>
+            <label asp-for="customer.Ciudad">Ciudad</label>
+            <div>
+                @*div es para dividir secciones de codigo*@
+                @*el Input es para darle diseño a la pagina , como un cuadro de texto*@
+                <input asp-for="customer.Ciudad" />
+                <span asp-validation-for="customer.Ciudad"></span>
+            </div>
+       </div>
+
+       <div>
+           <button type="submit">Guardar</button>
+       </div>
+   </div>
+</form>

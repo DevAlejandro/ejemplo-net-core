@@ -1,0 +1,21 @@
+﻿@page
+@model WebApplication1.Pages.CreateModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Crear</h2>
+
+
+
+<img src="~/Img/registro.png" alt="Registro" />
+
+
+@*mensaje para nuestra tabla *@
+<p>Ingrese sus Datos: </p>
+<form method="post">
+    <div asp-validation-summary="All"></div>
+    <div>Nombre: <input asp-for="Customer.Name" /></div>
+    <div>Ciudad: <input asp-for="Customer.Ciudad" /></div>
+    <input type="submit" />
+</form>

@@ -1,0 +1,41 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h3>@Model.Message</h3>
+<h1 style="color:cornflowerblue">Lista Clientes </h1>
+<form method="post">
+    @*tabla*@
+    <table class="table">
+        <thead>
+            <tr>
+                @*celda cabecera*@ 
+                <th>ID</th>
+                <th>Name</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Customer in Model.Customers)
+            {
+                <tr>
+                    <td>@Customer.Id</td>
+                    <td>@Customer.Name</td>
+                    <td>@Customer.Ciudad</td>
+                    <td>
+                        @*enlace a una pagina - variable referencia - nombre del boton*@
+                        <a asp-page="./Edit" asp-route-id="@Customer.Id">edit</a>
+                       @*crear boton tipo submit*@
+                        <button type="submit" asp-page-handler="delete"
+                                asp-route-id="@Customer.Id">delete</button>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <a asp-page="./Create">create</a>
+   
+</form>
